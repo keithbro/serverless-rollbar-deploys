@@ -12,15 +12,12 @@ npm install --save-dev serverless-rollbar-deploys
 
 See the example below for how to modify your serverless.yml
 
-```
-# serverless.yml
-
+```yaml
 plugins:
-  # ...
   - serverless-rollbar-deploys
 
 custom:
-  # ...
   rollbar-deploys:
     accessToken: STRING_VALUE
     user: ${env:USER}
+```
