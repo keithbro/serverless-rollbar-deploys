@@ -1,6 +1,6 @@
 # serverless-rollbar-deploys
 
-Send deployment notifications to Rollbar.
+Send [serverless](https://serverless.com) deployment notifications to [Rollbar](http://rollbar.com).
 
 ## Install
 
@@ -10,14 +10,16 @@ npm install --save-dev serverless-rollbar-deploys
 
 ## Usage
 
-See the example below for how to modify your serverless.yml
+Add the plugin and configure the accessToken and deployUser as demonstrated below.
 
 ```yaml
 plugins:
   - serverless-rollbar-deploys
 
 custom:
-  rollbar-deploys:
+  rollbar:
     accessToken: STRING_VALUE
-    username: ${env:USER}
+    deployUser: ${env:USER}
 ```
+
+The `environment` sent to Rollbar will be the `stage` option.
