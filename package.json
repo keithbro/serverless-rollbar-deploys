@@ -13,5 +13,13 @@
   "bugs": {
     "url": "https://github.com/keithbro/serverless-rollbar-deploys/issues"
   },
-  "homepage": "https://github.com/keithbro/serverless-rollbar-deploys#readme"
+  "homepage": "https://github.com/keithbro/serverless-rollbar-deploys#readme",
+  "keywords": [
+    "serverless",
+    "serverless-plugin",
+    "plugin",
+    "aws",
+    "rollbar",
+    "deployment"
+  ]
 }
