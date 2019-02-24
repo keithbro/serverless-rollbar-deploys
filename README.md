@@ -19,5 +19,5 @@ plugins:
 custom:
   rollbar-deploys:
     accessToken: STRING_VALUE
-    user: ${env:USER}
+    username: ${env:USER}
 ```
