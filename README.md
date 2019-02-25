@@ -22,4 +22,12 @@ custom:
     deployUser: ${env:USER}
 ```
 
-The `environment` sent to Rollbar will be the `stage` option.
+## Notes
+
+* The `environment` sent to Rollbar will be the `stage` option.
+* Remember that the plugins are executed in the order they are listed, so you probably want to list serverless-rollbar-deploys last.
+
+## Possible Improvements
+
+* Notify on other deployment events such as start and fail.
+* Only warn rather than fail if the any other other variables are missing.
